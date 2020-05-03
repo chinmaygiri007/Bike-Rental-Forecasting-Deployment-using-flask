@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+ <!DOCTYPE html>
+   <html>
+     <head>
+       <!--Import Google Icon Font-->
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       <!--Import materialize.css-->
+       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+       <!--Let browser know website is optimized for mobile-->
+       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     </head>
+
+     <body>
+       <!--JavaScript at end of body for optimized loading-->
+       <script type="text/javascript" src="js/materialize.min.js"></script>
+     </body>
+   </html>
+
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Bike Rental Forecasting</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+  <nav class="black" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">ONN-Bikes</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Menu</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center black-text">Bike Rental Forecasting</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Predict the count of renting bikes depending on the Attributes
+        <br>
+        </h5>
+      </div>
+
+   <div class="row">
+    <form action='/predict' method="post" class="col s12">
+      <div class="row">
+        <div class="input-field col s4">
+            <label for="1st_name"><b>Working Day</b></label>
+            <br>
+          <input placeholder="Place 1 if YES 0 of NO" name="work" id="first_name" type="text" class="validate">
+        </div>
+
+        <div class="input-field col s4">
+          <label for="2nd_name"><b>Temperature</b></label>
+            <br>
+          <input id="last_name" name="temp" placeholder="Temperature"  type="text" class="validate">
+        </div>
+
+        <div class="input-field col s4">
+            <label for="3rd_name"><b>Year</b></label>
+            <br>
+          <input id="_name" name="year" placeholder="Year 2011 or 2012" type="text" class="validate">
+        </div>
+	
+	<div class="input-field col s4">
+            <label for="_name"><b>Month</b></label>
+            <br>
+          <input id="4th_name" name="month" placeholder="Month 0-11" type="text" class="validate">
+        </div>
+
+	<div class="input-field col s4">
+            <label for="5t_name"><b>Hour</b></label>
+            <br>
+          <input id="_name" name="hour" placeholder="At which of a Day" type="text" class="validate">
+        </div>
+	
+	<div class="input-field col s4">
+            <label for="_name"><b>Day of Week</b></label>
+            <br>
+          <input id="_name" name="dow" placeholder="Day of Week(0-6)" type="text" class="validate">
+        </div>
+
+      </div>
+
+      <div class="row center">
+
+          <button type="submit" class="btn-large waves-effect waves-light black">Predict Count</button>
+      </div>
+    </form>
+      </div>
+
+      <br>
+        {{pred}}<br>
+
+    </div>
+  </div>
+
+
+    <br><br>
+  </div>
+  </div>>
+
+  <footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project.Since this project ain't implemented before.</p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Sky</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
+
